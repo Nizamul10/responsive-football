@@ -6,7 +6,7 @@ body{
 /*Head part */
 .head img{
      width: 556.01px;
-height: 438px;
+     height: 438px;
 }
 .first:hover .img{
     transform: scale(1.5);
@@ -14,7 +14,7 @@ height: 438px;
 }
 .first{
     background-color: rgba(4, 4, 121, 0.856);  
-    overflow: hidden;
+    overflow: hidden; width: 1160px;
 }
 .head{
     display: grid;
@@ -22,7 +22,7 @@ height: 438px;
     margin-top: 153px;
     margin-right: 140px;
     margin-left: 156px;
-     width: 1160px;
+    
     margin-left: 156px;
 }
 .head h1{
@@ -83,4 +83,47 @@ color: rgb(207, 16, 144);
     text-align: center;
     margin-left: 495px;
     margin-right: 461px;
+}
+/* -----------
+Media Queries
+------------- */
+
+/*----Mobile Devices------*/
+@media only screen and (max-width:688px) {
+    .head img{
+        width: 329px;
+        height: 259px;
+   }
+   .first{
+    background-color: rgba(4, 4, 121, 0.856);  
+        width: 556.01px;
+   }
+   .head{
+     display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .players{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+    width: 330px;
+    left: 14px;
+    top: 1240px;
+    padding: 15px;
+   }
+   .bonus_section{
+    margin-left: 150px;
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 50px;
+    width: 100px;
+    
+}
+   .foot{
+       width: 236px;
+    margin-left:200px;
+
+   }
+   .foot img{
+       width: 250px;
+       margin-left: 10px;
+   }
 }
